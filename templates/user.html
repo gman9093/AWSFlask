@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>User Homepage</title>
+</head>
+<body>
+
+<h2>Al's Demo Flask Web App</h2>
+
+<!-- Tableau iframe -->
+<div>
+    <iframe src="http://public.tableausoftware.com/views/PartialEconomicAreaStatistics/PEAStatisticsDashboard?:showVizHome=no&:embed=true" width="645" height="955"></iframe>
+</div>
+
+{% if user %}
+    <h1>hello {{ user }}</h1>
+{% else %}
+    <h1>Please Log In Now or Go Away Very Fast!!!</h1>
+{% endif %}
+
+</body>
+</html>
